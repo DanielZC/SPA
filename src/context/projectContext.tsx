@@ -36,7 +36,7 @@ export const ProjectContextProvider = ({ children }: PropsWithChildren) => {
     const { success, errors, server } = await storeProject(projectData);
 
     if (!success) {
-      return { success: !success, errors: errors, server: server };
+      return { success: success, errors: errors, server: server };
     }
 
     dispatch({ type: "ACTION" });
@@ -50,7 +50,7 @@ export const ProjectContextProvider = ({ children }: PropsWithChildren) => {
     const { success, errors, server } = await updateProject(id, projectData);
 
     if (!success) {
-      return { success: !success, errors: errors, server: server };
+      return { success: success, errors: errors, server: server };
     }
 
     dispatch({ type: "ACTION" });

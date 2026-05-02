@@ -33,7 +33,7 @@ export const BlockContextProvider = ({ children }: PropsWithChildren) => {
     const { success, errors, server } = await storeBlock(blockData);
 
     if (!success) {
-      return { success: !success, errors: errors, server: server };
+      return { success: success, errors: errors, server: server };
     }
 
     dispatch({ type: "ACTION" });
@@ -47,7 +47,7 @@ export const BlockContextProvider = ({ children }: PropsWithChildren) => {
     const { success, errors, server } = await updateBlock(id, blockData);
 
     if (!success) {
-      return { success: !success, errors: errors, server: server };
+      return { success: success, errors: errors, server: server };
     }
 
     dispatch({ type: "ACTION" });

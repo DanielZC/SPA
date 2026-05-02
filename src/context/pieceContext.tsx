@@ -48,7 +48,7 @@ export const PieceContextProvider = ({ children }: PropsWithChildren) => {
     const { success, errors, server } = await updatePiece(id, pieceData);
 
     if (!success) {
-      return { success: !success, errors: errors, server: server };
+      return { success: success, errors: errors, server: server };
     }
 
     dispatch({ type: "ACTION" });
