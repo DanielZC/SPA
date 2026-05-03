@@ -16,7 +16,7 @@ Para que el frontend funcione correctamente, deben estar activos simultáneament
 # Decisiones técnicas
 
 ### Diseño
-
+- **React-compiler:** Herramienta que optimiza el rendimiento de la aplicación al memorizar componentes y evitar renderizados innecesarios cuando una variable de estado sufre mutaciones que no afectan la interfaz.
 - **TailwindCSS + Vite:** Framework de utilidades CSS que se integra con Vite para generar estilos de forma optimizada en tiempo de compilación.
 - **React Hook Form:** Biblioteca para el manejo del estado de formularios y validación de entradas, optimizando los renders y reduciendo el código.
 - **Axios:** Cliente HTTP basado en promesas para realizar peticiones asíncronas entre el frontend y los distintos endpoints de la API.
